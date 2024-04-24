@@ -1,0 +1,60 @@
+import React from 'react'
+import frooti from '../assets/Frooti.jpg'
+import { FaShoppingCart } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoMdShare } from "react-icons/io";
+import { TiStar } from "react-icons/ti";
+import { MdOutlineStarOutline } from "react-icons/md";
+
+
+const Card = ({image,Name, BrandName, Type, Price, MRP, Avb, Unit,Qty}) => {
+  return (
+    <>
+        <main className='relative'>
+            <section className='h-96 w-56 border border-emerald-800  rounded-md '>
+                <span className='absolute bg-green-600 w-24 text-center p-0 left-0 top-0 h-7  rounded-tl-md rounded-br-md'>3% Off</span>
+                <section className='pt-3 '>
+                    <img src={image} alt='' className='h-40'/>
+                </section>
+                <section className='p-2'>
+                    <h1 className='font-bold text-2xl'>{Name}</h1>
+                    <h1>{BrandName}</h1>
+                    <h1>{Type}</h1>
+                    <section className='flex gap-4'>
+                        <h2>₹{Price}</h2>
+                        <h2 className='line-through'>M.R.P.₹{MRP}</h2>
+                    </section>
+                    <section className='flex justify-between'>
+                        <section>
+                            <h1>{Avb}</h1>
+                            <section className='flex'>
+                                <TiStar className='text-yellow-400'/>
+                                <TiStar className='text-yellow-400'/>
+                                <TiStar className='text-yellow-400'/>
+                                <TiStar className='text-yellow-400'/>
+                                <MdOutlineStarOutline/>
+                            </section>
+                            <h1>Unit : {Unit}</h1>
+                        </section>
+                        <section>
+                            <IoMdShare className='cursor-pointer font-bold text-2xl'/>
+                        </section>
+                    </section>
+                    <section className='flex justify-between text-sm '>
+                        <section className='flex items-center gap-1 border border-orange-800 rounded-md cursor-pointer p-1'>
+                            Qty:{Qty}
+                            <IoIosArrowDown/>
+                        </section>
+                        <section className='flex items-center gap-1 border border-orange-800 rounded-md cursor-pointer p-1'>
+                            <FaShoppingCart/>
+                            <h3>Add to cart</h3>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </>
+  )
+}
+
+export default Card
