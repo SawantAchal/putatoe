@@ -9,7 +9,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-        <nav className='flex justify-around w-full h-16 bg-cyan-700 align-middle items-center'>
+        <nav className='flex justify-around w-full h-16 bg-cyan-700 align-middle items-center fixed z-50 top-0 left-0'>
             <section className='flex'>
                 <img src={logo} alt='logo' className='h-10'/>
                 <section>

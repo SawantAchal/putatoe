@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 
 const MainCarousel = () => {
     return (
-    <div className='relative h-[600px] bg-white w-full'>
+    <div className='relative mt-5 bg-white w-full'>
     <Swiper    loop={true} spaceBetween={0} navigation={true} modules={[Navigation, Autoplay]} autoplay={{   delay: 4500, }} className="h-[50%]">
       <SwiperSlide>
         <img src={MC1} alt='' className='w-full'/>

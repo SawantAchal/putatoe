@@ -9,7 +9,7 @@ import { FaFilePen } from "react-icons/fa6";
 const Header = () => {
   return (
     <>
-        <header className='relative flex justify-around bg-cyan-950 text-white text-center pt-6 w-full'>
+        <header className='relative flex justify-around bg-cyan-950 text-white text-center pt-20 z-0 p-6 w-full '>
             <section>
                 <TbDeviceMobileCharging  className='h-16 w-16 text-sm p-3 rounded-full bg-white text-cyan-950'/>
                 <p>RECHARGE</p>
