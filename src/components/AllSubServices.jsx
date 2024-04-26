@@ -10,7 +10,7 @@ const AllSubServices = () => {
         {data.map((item, index) => ( 
           <div key={index} className='border border-pink-950 rounded-md w-auto md:w-80 lg:w-96 relative'>
             <img src={item.image} alt={'name'} className='mx-auto h-72 w-full md:w-80 lg:w-96 rounded-md' />
-            <p className='absolute inset-0 flex items-end  justify-center text-gray-600'>{item.name}</p>
+            <p className='absolute inset-0 flex items-end  justify-center text-white font-bold text-xl'>{item.name}</p>
           </div>
         ))}
       </div>
