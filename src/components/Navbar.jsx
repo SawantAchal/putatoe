@@ -49,7 +49,7 @@ const Navbar = () => {
         </section>
         <section className='flex ml-8 items-center h-8 w-80 border border-white bg-white gap-3 rounded-md'>
           <CiSearch className='text-black text-3xl font-bold'/>
-          <input type='search' placeholder='  Search For Productand Brand' className='bg-transparent w-full h-full border-none focus:outline-0 text-black text-sm'/>
+          <input type='search' placeholder='  Search For Product and Brand' className='bg-transparent w-full h-full border-none focus:outline-0 text-black text-sm'/>
         </section>
         <section className='flex ml-8 gap-2'>
           <BiSolidMessage  className='text-2xl'/>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <FaShoppingCart className='text-2xl'/>
           <span className='bg-[#A69080] h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
         </section>
-        <section className='ml-8 border border-white p-2 rounded-lg font-bold'>
+        <section className='ml-8 border border-white p-2 rounded-lg '>
           <button>Log In</button>
         </section>
       </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
         )}
         {isMenuOpen && (
-          <div className='lg:hidden fixed top-0 left-0 h-full w-64 bg-gray-800 p-4'>
+          <div className='lg:hidden fixed top-0 left-0 h-full w-64 bg-[#AC8968] p-4'>
             <button className='text-white' onClick={closeSidebar}>
               <FaTimes className='text-white text-2xl' />
             </button>

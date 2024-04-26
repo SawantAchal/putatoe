@@ -14,6 +14,8 @@ import VegConatctcarousel from "./components/VegConatctcarousel";
 import GroceryContactCarousel from "./components/GroceryContactCarousel";
 import DairyContactCarousel from "./components/DairyContactCarousel";
 import ContactData from './data/ContactData'
+import ShopByCategory from "./pages/ShopByCategory";
+import OfferData from "./data/OfferData";
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
       <VegConatctcarousel items={ContactData}/>
       <GroceryContactCarousel items={ContactData}/>
       <DairyContactCarousel items={ContactData}/>
+      <ShopByCategory data={OfferData}/>
       <Footer/>
     </>
   );

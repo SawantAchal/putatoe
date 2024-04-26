@@ -25,7 +25,7 @@ const GroceryContactCarousel = ({items}) => {
   return (
     <div className="bg-[#AC8968] shadow-2xl md:py-8 md:p-10 p-0 m-10 rounded-md">
     <section className='flex justify-between'>
-      <h1 className='font-bold text-xl mb-2 p-3 md:p-0'>Grocery Conatct </h1>
+      <h1 className='font-bold text-xl mb-2 p-3 md:p-0'>Grocery Contact </h1>
       <h1 className='font-bold text-xl mb-2 cursor-pointer p-3 md:p-0'>View All</h1>
     </section>
     <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2000} infinite={true} arrows={true}>
