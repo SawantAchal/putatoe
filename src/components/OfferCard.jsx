@@ -3,7 +3,7 @@ import React from 'react'
 const OfferCard = ({image ,name, off, type}) => {
   return (
     <>
-        <main className='border border-black bg-lime-400 h-48 w-44 rounded-sm'>
+        <main className='border border-black bg-[#B1A6A4] h-48 w-44 rounded-sm'>
             <section>
                 <img src={image} alt={name} className='w-full h-32'/>
             </section>
