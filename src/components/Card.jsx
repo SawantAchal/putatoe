@@ -10,8 +10,8 @@ const Card = ({image,Name, BrandName, Type, Price, MRP, Avb, Unit,Qty,Off}) => {
   return (
     <>
         <main className='relative'>
-            <section className='md:h-3/6 h-4/5 md:w-56 w-60 border border-black border-solid bg-white bg-opacity-40 text-[#3E362E] rounded-md pb-3'>
-                <span className='absolute bg-green-600 w-24 text-center p-0 left-0 top-0 h-7  rounded-tl-md rounded-br-lg'>{Off}% Off</span>
+            <section className='md:h-3/6 h-4/5 md:w-56 w-60 border border-black border-solid bg-[#D8CFD0]  text-[#3E362E] rounded-md pb-3'>
+                <span className='absolute bg-[#B1A6A4] text-white w-24 text-center p-0 left-0 top-0 h-7  rounded-tl-md rounded-br-lg'>{Off}% Off</span>
                 <section className='pt-4 '>
                     <img src={image} alt='' className='h-40 w-full'/>
                 </section>
@@ -41,11 +41,11 @@ const Card = ({image,Name, BrandName, Type, Price, MRP, Avb, Unit,Qty,Off}) => {
                         </section>
                     </section>
                     <section className='flex justify-between text-sm '>
-                        <section className='flex items-center gap-1 border rounded-md cursor-pointer p-1 font-bold bg-slate-400'>
+                        <section className='flex items-center gap-1 border rounded-md cursor-pointer p-1 font-bold bg-[#B1A6A4] text-black border-none'>
                             Qty:{Qty}
                             <IoIosArrowDown/>
                         </section>
-                        <section className='flex items-center gap-1 border rounded-md cursor-pointer p-1 font-bold bg-green-800'>
+                        <section className='flex items-center gap-1 border rounded-md cursor-pointer p-1 font-bold border-none bg-[#697184] text-white'>
                             <FaShoppingCart/>
                             <h3>Add to cart</h3>
                         </section>

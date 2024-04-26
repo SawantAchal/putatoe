@@ -23,7 +23,7 @@ const DairyProductCarousel = ({data}) => {
   };
   
   return (
-    <div className="bg-[#93785B] bg-opacity-65 shadow-2xl md:py-8 md:p-10 p-0 mt-4 m-10 rounded-md">
+    <div className="bg-[#F2F1EF] bg-opacity-65 shadow-2xl md:py-8 md:p-10 p-0 mt-4 m-10 rounded-md">
       <section className='flex justify-between'>
         <h1 className='font-bold text-xl mb-2 p-3 md:p-0'>Dairy Product</h1>
         <h1 className='font-bold text-xl mb-2 cursor-pointer p-3 md:p-0'>View All</h1>

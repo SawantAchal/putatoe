@@ -4,7 +4,7 @@ import data from '../data/AllSubServices';
 
 const AllSubServices = () => {
   return (
-    <div className=' bg-[#A69080] shadow-2xl md:py-8 md:p-10  p-0 m-10 rounded-md'>
+    <div className=' bg-[#F2F1EF] shadow-2xl md:py-8 md:p-10  p-0 m-10 rounded-md'>
       <h1 className='font-bold text-sm md:text-xl mb-2 p-3 md:p-0'>All Sub Services</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4'>
         {data.map((item, index) => ( 
