@@ -14,7 +14,8 @@ const Beverages = [
         MRP:35,
         Avb:"In Stock",
         Unit:1,
-        Qty:"600 ml"
+        Qty:"600 ml",
+        Off:3
     },
     {
         id:2,
@@ -26,7 +27,8 @@ const Beverages = [
         MRP:80,
         Avb:"In Stock",
         Unit:1,
-        Qty:"2 L"
+        Qty:"2 L",
+        // Off:4
     },
 
     {
@@ -39,7 +41,8 @@ const Beverages = [
         MRP:40,
         Avb:"In Stock",
         Unit:1,
-        Qty:"750 ml"
+        Qty:"750 ml",
+        Off:4
     },   
     {
         id:4,
@@ -51,7 +54,8 @@ const Beverages = [
         MRP:40,
         Avb:"In Stock",
         Unit:1,
-        Qty:"750 ml"
+        Qty:"750 ml",
+        Off:5
     },    
     
     {
@@ -64,7 +68,8 @@ const Beverages = [
         MRP:35,
         Avb:"In Stock",
         Unit:1,
-        Qty:"600 ml"
+        Qty:"600 ml",
+        // Off:4
     },
     
 ]

@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 import play from '../assets/play.png';
+import { FaSquareFacebook } from "react-icons/fa6";
+import { RxLinkedinLogo } from "react-icons/rx";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-900 text-white py-10'>
+    <footer className='bg-[#3E362E] text-white py-10 cursor-pointer'>
       <div className='container mx-auto flex flex-wrap justify-around'>
         {/* Logo and About section */}
         <div className='flex flex-col items-center mb-8'>
@@ -52,9 +55,9 @@ const Footer = () => {
         <div className='mb-8'>
           <h1 className='text-lg font-bold mb-2'>CONNECT WITH US</h1>
           <div className='flex mb-4'>
-            <img src={logo} alt='logo' className='h-6 mr-2' />
-            <img src={logo} alt='logo' className='h-6 mr-2' />
-            <img src={logo} alt='logo' className='h-6' />
+            <FaSquareFacebook className='h-6 mr-2' />
+            <RxLinkedinLogo className='h-6 mr-2' />
+            <FaSquareInstagram className='h-6' />
           </div>
           <h1 className='text-lg font-bold mb-2'>GET OUR APP</h1>
           <img src={play} alt='play store' className='h-6' />

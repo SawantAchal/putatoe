@@ -1,5 +1,4 @@
 import React from 'react'
-import frooti from '../assets/Frooti.jpg'
 import { FaShoppingCart } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdShare } from "react-icons/io";
@@ -7,22 +6,23 @@ import { TiStar } from "react-icons/ti";
 import { MdOutlineStarOutline } from "react-icons/md";
 
 
-const Card = ({image,Name, BrandName, Type, Price, MRP, Avb, Unit,Qty}) => {
+const Card = ({image,Name, BrandName, Type, Price, MRP, Avb, Unit,Qty,Off}) => {
   return (
     <>
         <main className='relative'>
-            <section className='h-96 w-56 border border-emerald-800  rounded-md '>
-                <span className='absolute bg-green-600 w-24 text-center p-0 left-0 top-0 h-7  rounded-tl-md rounded-br-md'>3% Off</span>
-                <section className='pt-3 '>
-                    <img src={image} alt='' className='h-40'/>
+            <section className='md:h-3/6 h-4/5 md:w-56 w-60 border border-black border-solid bg-white bg-opacity-40 text-[#3E362E] rounded-md pb-3'>
+                <span className='absolute bg-green-600 w-24 text-center p-0 left-0 top-0 h-7  rounded-tl-md rounded-br-lg'>{Off}% Off</span>
+                <section className='pt-4 '>
+                    <img src={image} alt='' className='h-40 w-full'/>
                 </section>
-                <section className='p-2'>
+                <hr/>
+                <section className='p-2 pt-4'>
                     <h1 className='font-bold text-2xl'>{Name}</h1>
                     <h1>{BrandName}</h1>
                     <h1>{Type}</h1>
                     <section className='flex gap-4'>
-                        <h2>₹{Price}</h2>
-                        <h2 className='line-through'>M.R.P.₹{MRP}</h2>
+                        <h2 className='font-bold'>₹{Price}</h2>
+                        <h2 className='line-through text-red-800'>M.R.P.₹{MRP}</h2>
                     </section>
                     <section className='flex justify-between'>
                         <section>
@@ -41,11 +41,11 @@ const Card = ({image,Name, BrandName, Type, Price, MRP, Avb, Unit,Qty}) => {
                         </section>
                     </section>
                     <section className='flex justify-between text-sm '>
-                        <section className='flex items-center gap-1 border border-orange-800 rounded-md cursor-pointer p-1'>
+                        <section className='flex items-center gap-1 border rounded-md cursor-pointer p-1 font-bold bg-slate-400'>
                             Qty:{Qty}
                             <IoIosArrowDown/>
                         </section>
-                        <section className='flex items-center gap-1 border border-orange-800 rounded-md cursor-pointer p-1'>
+                        <section className='flex items-center gap-1 border rounded-md cursor-pointer p-1 font-bold bg-green-800'>
                             <FaShoppingCart/>
                             <h3>Add to cart</h3>
                         </section>

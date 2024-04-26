@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=' flex justify-between items-center w-full h-16 bg-cyan-700 fixed z-50 top-0 left-0 px-4 lg:px-8 text-xl text-white cursor-pointer '>
+    <nav className=' flex justify-between items-center w-full h-16 bg-[#3E362E] fixed z-50 top-0 left-0 px-4 lg:px-8 text-xl text-white cursor-pointer '>
         <div className='flex items-center gap-2 '>
         <img src={logo} alt='logo' className='h-14' />
         <div className='hidden lg:block'>
@@ -53,11 +53,11 @@ const Navbar = () => {
         </section>
         <section className='flex ml-8 gap-2'>
           <BiSolidMessage  className='text-2xl'/>
-          <span className='bg-slate-600 h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
+          <span className='bg-[#A69080] h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
           <FaBell className='text-2xl'/>
-          <span className='bg-slate-600 h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
+          <span className='bg-[#A69080] h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
           <FaShoppingCart className='text-2xl'/>
-          <span className='bg-slate-600 h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
+          <span className='bg-[#A69080] h-5 w-5 rounded-full text-center -mt-3 text-sm'>0</span>
         </section>
         <section className='ml-8 border border-white p-2 rounded-lg font-bold'>
           <button>Log In</button>

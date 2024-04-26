@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import MainCarousel from "./components/MainCarousel";
+import Navbar from "./components/Navbar";
+import BeveragesCarousel from './components/BeveragesCarousel'
+import DairyProductCarousel from './components/DairyProductCarousel'
+import DairyProduct from './data/DairyProduct'
+import Beverages from './data/Beverages'
+import Footer from "./components/Footer";
+import AllSubServices from "./components/AllSubServices";
+import OfferCard from "./components/OfferCard";
+import ContactCard from "./components/ContactCard";
+import FruitCarousel from "./components/FruitCarousel";
+import FruitData from "./data/FruitData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Header/>
+      <MainCarousel/>
+      <BeveragesCarousel data={Beverages}/>
+      <DairyProductCarousel data={DairyProduct} />
+      <AllSubServices/>
+      <FruitCarousel data={FruitData}/>
+      {/* <OfferCard/>
+      <ContactCard/> */}
+      <Footer/>
+    </>
   );
 }
 
