@@ -8,9 +8,12 @@ import Beverages from './data/Beverages'
 import Footer from "./components/Footer";
 import AllSubServices from "./components/AllSubServices";
 import OfferCard from "./components/OfferCard";
-import ContactCard from "./components/ContactCard";
 import FruitCarousel from "./components/FruitCarousel";
 import FruitData from "./data/FruitData";
+import VegConatctcarousel from "./components/VegConatctcarousel";
+import GroceryContactCarousel from "./components/GroceryContactCarousel";
+import DairyContactCarousel from "./components/DairyContactCarousel";
+import ContactData from './data/ContactData'
 
 function App() {
   return (
@@ -23,7 +26,9 @@ function App() {
       <AllSubServices/>
       <FruitCarousel data={FruitData}/>
       <OfferCard/>
-      <ContactCard/>
+      <VegConatctcarousel items={ContactData}/>
+      <GroceryContactCarousel items={ContactData}/>
+      <DairyContactCarousel items={ContactData}/>
       <Footer/>
     </>
   );
