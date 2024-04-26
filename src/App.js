@@ -7,7 +7,6 @@ import DairyProduct from './data/DairyProduct'
 import Beverages from './data/Beverages'
 import Footer from "./components/Footer";
 import AllSubServices from "./components/AllSubServices";
-import OfferCard from "./components/OfferCard";
 import FruitCarousel from "./components/FruitCarousel";
 import FruitData from "./data/FruitData";
 import VegConatctcarousel from "./components/VegConatctcarousel";
@@ -27,7 +26,6 @@ function App() {
       <DairyProductCarousel data={DairyProduct} />
       <AllSubServices/>
       <FruitCarousel data={FruitData}/>
-      <OfferCard/>
       <VegConatctcarousel items={ContactData}/>
       <GroceryContactCarousel items={ContactData}/>
       <DairyContactCarousel items={ContactData}/>
