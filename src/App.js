@@ -22,8 +22,8 @@ function App() {
       <DairyProductCarousel data={DairyProduct} />
       <AllSubServices/>
       <FruitCarousel data={FruitData}/>
-      {/* <OfferCard/>
-      <ContactCard/> */}
+      <OfferCard/>
+      <ContactCard/>
       <Footer/>
     </>
   );
